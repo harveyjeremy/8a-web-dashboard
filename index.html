@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Kelas</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script>
+    /* Terapkan tema sebelum render agar tidak berkedip */
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <p class="class-name" id="className"></p>
+        <h1 id="greeting">Good Morning</h1>
+        <p class="date" id="date"></p>
+      </div>
+      <div class="header-right">
+        <div class="clock" role="timer" aria-label="Jam digital WIB"><span id="clock">00:00:00</span><small>WIB</small></div>
+        <button class="icon-btn" id="themeToggle" type="button" title="Ganti tema"></button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card countdown" id="countdown" aria-label="Hitung mundur bel sekolah"></section>
+
+      <section class="card shortcuts" aria-label="Pintasan">
+        <h2>Pintasan</h2>
+        <div class="shortcut-grid" id="shortcutGrid"></div>
+      </section>
+
+      <section class="card calendar" aria-label="Kalender asesmen">
+        <div class="cal-head">
+          <h2 id="calTitle"></h2>
+          <div class="cal-nav">
+            <button class="text-btn" id="calToday" type="button">Hari ini</button>
+            <button class="icon-btn" id="calPrev" type="button" aria-label="Bulan sebelumnya">‹</button>
+            <button class="icon-btn" id="calNext" type="button" aria-label="Bulan berikutnya">›</button>
+          </div>
+        </div>
+        <div class="cal-grid cal-weekdays" aria-hidden="true">
+          <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span>
+        </div>
+        <div class="cal-grid" id="calGrid"></div>
+        <div class="legend">
+          <span><i class="dot dot-ph"></i> Penilaian Harian (PH)</span>
+          <span><i class="dot dot-sumatif"></i> Asesmen Sumatif</span>
+        </div>
+      </section>
+
+      <div class="side">
+        <section class="card" aria-label="Asesmen terdekat">
+          <h2>Asesmen terdekat</h2>
+          <ul class="list" id="upcomingList"></ul>
+        </section>
+        <section class="card" aria-label="Detail asesmen" aria-live="polite">
+          <h2>Detail tanggal</h2>
+          <p class="muted" id="detailDate"></p>
+          <div id="detailBody"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Skrip biasa (bukan module) supaya index.html juga jalan saat dibuka langsung dari file -->
+  <script src="data/config.js"></script>
+  <script src="data/assessments.js"></script>
+  <script src="data/schedule.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
