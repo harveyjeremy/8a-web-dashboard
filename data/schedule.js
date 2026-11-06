@@ -19,7 +19,7 @@ window.SCHEDULE = {
       { label: 'Bel masuk setelah istirahat 1', time: '09:55' },
       { label: 'Istirahat 2',                   time: '11:55' },
       { label: 'Bel masuk setelah istirahat 2', time: '12:25' },
-      { label: 'Pulang',                        time: '14:25' }
+      { label: 'TEST',                        time: '22:00' }
     ]
   },
   week: {
