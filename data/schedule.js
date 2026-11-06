@@ -6,20 +6,20 @@
 window.SCHEDULE = {
   templates: {
     regular: [
-      { label: 'Bel masuk',                     time: '07:00' },
-      { label: 'Istirahat 1',                   time: '09:30' },
-      { label: 'Bel masuk setelah istirahat 1', time: '09:50' },
-      { label: 'Istirahat 2',                   time: '12:00' },
-      { label: 'Bel masuk setelah istirahat 2', time: '12:30' },
-      { label: 'Pulang',                        time: '14:30' }
+      { label: 'Bel masuk',                     time: '06:45' },
+      { label: 'Istirahat 1',                   time: '09:25' },
+      { label: 'Bel masuk setelah istirahat 1', time: '09:55' },
+      { label: 'Istirahat 2',                   time: '11:55' },
+      { label: 'Bel masuk setelah istirahat 2', time: '12:25' },
+      { label: 'Pulang',                        time: '14:25' }
     ],
     friday: [
-      { label: 'Bel masuk',                     time: '07:00' },
-      { label: 'Istirahat 1',                   time: '09:30' },
-      { label: 'Bel masuk setelah istirahat 1', time: '09:50' },
-      { label: 'Istirahat 2',                   time: '11:30' },
-      { label: 'Bel masuk setelah istirahat 2', time: '12:00' },
-      { label: 'Pulang',                        time: '13:30' }
+      { label: 'Bel masuk',                     time: '06:45' },
+      { label: 'Istirahat 1',                   time: '09:25' },
+      { label: 'Bel masuk setelah istirahat 1', time: '09:55' },
+      { label: 'Istirahat 2',                   time: '11:55' },
+      { label: 'Bel masuk setelah istirahat 2', time: '12:25' },
+      { label: 'Pulang',                        time: '14:25' }
     ]
   },
   week: {
