@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard 8A</title>
+  <title>Dashboard Kelas</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <script>
     /* Terapkan tema sebelum render agar tidak berkedip */
@@ -33,7 +33,7 @@
       <section class="card countdown" id="countdown" aria-label="Hitung mundur bel sekolah"></section>
 
       <section class="card shortcuts" aria-label="Pintasan">
-        <h2>Shortcuts</h2>
+        <h2>Pintasan</h2>
         <div class="shortcut-grid" id="shortcutGrid"></div>
       </section>
 
@@ -51,23 +51,36 @@
         </div>
         <div class="cal-grid" id="calGrid"></div>
         <div class="legend">
+          <span><i class="dot dot-ph"></i> Penilaian Harian (PH)</span>
           <span><i class="dot dot-sumatif"></i> Asesmen Sumatif</span>
         </div>
       </section>
 
       <div class="side">
         <section class="card" aria-label="Asesmen terdekat">
-          <h2>Asesmen mendatang</h2>
+          <h2>Asesmen terdekat</h2>
           <ul class="list" id="upcomingList"></ul>
         </section>
         <section class="card" aria-label="Detail asesmen" aria-live="polite">
-          <h2>Detail asesmen</h2>
+          <h2>Detail tanggal</h2>
           <p class="muted" id="detailDate"></p>
           <div id="detailBody"></div>
         </section>
       </div>
+      <section class="card schedule" id="schedule" aria-label="Today's Class Schedule">
+        <div class="sch-head">
+          <h2>Today's Class Schedule</h2>
+          <p class="muted" id="schDate"></p>
+        </div>
+        <div class="sch-body" id="schBody"></div>
+      </section>
     </main>
   </div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Jadwal pelajaran ukuran besar">
+    <button class="icon-btn lb-close" id="lbClose" type="button" aria-label="Tutup">✕</button>
+    <img id="lbImg" alt="">
+  </dialog>
 
   <!-- Skrip biasa (bukan module) supaya index.html juga jalan saat dibuka langsung dari file -->
   <script src="data/config.js"></script>
