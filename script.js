@@ -125,14 +125,12 @@
     drive: '<svg viewBox="0 0 87.3 78" aria-hidden="true"><path fill="#0066da" d="M6.6 66.85l3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8H0c0 1.55.4 3.1 1.2 4.5z"/><path fill="#00ac47" d="M43.65 25L29.9 1.2c-1.35.8-2.5 1.9-3.3 3.3L1.2 48.5c-.8 1.4-1.2 2.95-1.2 4.5h27.5z"/><path fill="#ea4335" d="M73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5H59.8l5.85 11.5z"/><path fill="#00832d" d="M43.65 25L57.4 1.2C56.05.4 54.5 0 52.9 0H34.4c-1.6 0-3.15.45-4.5 1.2z"/><path fill="#2684fc" d="M59.8 53H27.5L13.75 76.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z"/><path fill="#ffba00" d="M73.4 26.5L60.7 4.5c-.8-1.4-1.95-2.5-3.3-3.3L43.65 25 59.8 53h27.45c0-1.55-.4-3.1-1.2-4.5z"/></svg>',
     schedule: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h3M13 14h3M8 17.2h3"/></svg>',
     gmail: '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="#5f6368"/><path d="M3.8 7.2L12 13.2l8.2-6" stroke="#ea4335"/></svg>',
-    chrome: '<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#ea4335" d="M24 24L43.05 13A22 22 0 0 0 4.95 13z"/><path fill="#fbbc04" transform="rotate(120 24 24)" d="M24 24L43.05 13A22 22 0 0 0 4.95 13z"/><path fill="#34a853" transform="rotate(240 24 24)" d="M24 24L43.05 13A22 22 0 0 0 4.95 13z"/><circle cx="24" cy="24" r="11.5" fill="#fff"/><circle cx="24" cy="24" r="9" fill="#4285f4"/></svg>'
   };
   var SHORTCUTS = [
     { icon: 'google',   name: 'Google Search', url: 'https://www.google.com' },
     { icon: 'drive',    name: 'Google Drive',  url: 'https://drive.google.com' },
     { icon: 'schedule', name: 'Jadwal Kelas',  url: CONFIG.scheduleDocUrl },
     { icon: 'gmail',    name: 'Gmail',         url: 'https://mail.google.com/mail/u/0/' },
-    { icon: 'chrome',   name: 'Chrome New Tab', url: 'chrome://new-tab-page' }
   ];
   SHORTCUTS.forEach(function (s) {
     var a = el('a', 'shortcut');
