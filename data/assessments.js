@@ -4,7 +4,7 @@
    (Memakai file .js, bukan .json, karena browser memblokir fetch() file lokal
    saat index.html dibuka langsung. Strukturnya sama dengan JSON.) */
 window.ASSESSMENTS = [
-  { date: '2026-11-04', subject: 'Informatika', type: 'Sumatif', description: 'Bab 3 Sistem Komputer (Konversi Bilangan)' },
+{ date: '2026-11-04', subject: 'Informatika', type: 'Sumatif', description: 'Bab 3 Sistem Komputer (Konversi Bilangan)' },
 { date: '2026-11-05', subject: 'Seni Tari', type: 'Sumatif', description: 'Tari tradisional dan iringan tari' },
 { date: '2026-11-06', subject: 'Fisika', type: 'Sumatif', description: 'BAB III USAHA, ENERGI DAN PESAWAT SEDERHANA' },
 { date: '2026-11-10', subject: 'Bahasa Inggris', type: 'Sumatif', description: 'Speaking: Talking about plans' },
